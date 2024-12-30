@@ -30,7 +30,7 @@ Learning resources for JavaScript fundamentals.
 
 📝 How to Use
 
-Clone the repository: git clone https://github.com/Vansh12970/your-repo-name.git
+Clone the repository: git clone https://github.com/Vansh12970/javascript
 Navigate through the directories for specific examples and projects.
 Run the JavaScript files directly in the browser or using Node.js.
 Feel free to explore and contribute! Let's build something amazing together. 😊
