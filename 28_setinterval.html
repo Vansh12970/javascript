@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <div id="time"></div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId;
+    
+    const sayDate = function() {
+        const date = new Date();
+        document.getElementById('time').innerHTML = date.toLocaleString(); // Display the date in the #time div
+    };
+    
+    document.querySelector("#start").addEventListener('click', function() {
+        intervalId = setInterval(sayDate, 1000,); // Call sayDate every 1 second
+    });
+    
+    document.querySelector("#stop").addEventListener('click', function() {
+        clearInterval(intervalId); // Stop the interval
+    });
+</script>
+</html>
